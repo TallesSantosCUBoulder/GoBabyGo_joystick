@@ -25,7 +25,17 @@ For this car, a modification was made for the movement. Using a joystick instead
 To implement the timed movement for turning left and right, a 555 circuit was created and added to each of the direction inputs.  
 
 
-![555 Timer Circuit Diagram](Images/555CarCircuit.png)
+![555 Timer Circuit Diagram](Images/555CarCircuit.png)  
 *555 Timer Circuit Diagram*  
 &emsp;  
 The combination of resistors and capacitors makes the 5 volt pulse from the timer last for only 1 second before cutting off regardless of whether the joystick is still held down, resulting in the short burst of turning that the car experiences.  
+
+![Full Car Circuit Diagram](Images/PCBSchematic.png)  
+*The Full Circuit Diagram of the car*  
+&emsp;  
+
+![Full Car PCB Model](Images/PCBSchematic.png)  
+*The Full PCB Model of the car*  
+&emsp;  
+
+The full construction of the circuit
