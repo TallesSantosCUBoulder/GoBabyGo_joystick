@@ -28,7 +28,7 @@ To implement the timed movement for turning left and right, a 555 circuit was cr
 ![555 Timer Circuit Diagram](Images/555CarCircuit.png)  
 *555 Timer Circuit Diagram*  
 &emsp;  
-The combination of resistors and capacitors makes the 5 volt pulse from the timer last for only 1 second before cutting off regardless of whether the joystick is still held down, resulting in the short burst of turning that the car experiences.  
+The combination of resistors and capacitors makes the five volt pulse from the timer last for only sec second before cutting off regardless of whether the joystick is still held down, resulting in the short burst of turning that the car experiences.  
 
 ![Full Car Circuit Diagram](Images/PCBSchematic.png)  
 *The Full Circuit Diagram of the car*  
@@ -38,4 +38,5 @@ The combination of resistors and capacitors makes the 5 volt pulse from the time
 *The Full PCB Model of the car*  
 &emsp;  
 
-The full construction of the circuit
+The full construction of the circuit requires the following components:
+* [3 full BTS7960 High Current H-Bridge Motor Drivers](/Datasheets/BTS7960%20Motor%20Driver.pdf)
