@@ -34,7 +34,7 @@ The combination of resistors and capacitors makes the 5 volt pulse from the time
 *The Full Circuit Diagram of the car*  
 &emsp;  
 
-![Full Car PCB Model](Images/PCB3dModel.png)  
+![Full Car PCB Model](Images/PCBCicuitModel.png)  
 *The Full PCB Model of the car*  
 &emsp;  
 
