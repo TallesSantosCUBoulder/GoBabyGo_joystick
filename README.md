@@ -21,4 +21,9 @@ Include:
 ### Physical/Body Changes
 Put what physical changes you made to the body here
 ### Electrical Solutions
-For this car, a modification was made for the movement. Using a joystick instead of a steering wheel and foot-powered pedals, the car can move forwards and backwards without restrictions, but turning left and right is altered. Instead of turning left and right without restriction, moving or holding the joystick in either direction causes the car to turn for only one second before stopping and waiting for another input(Include a video/gif of the car moving in all four directions with the joystick)
+For this car, a modification was made for the movement. Using a joystick instead of a steering wheel and foot-powered pedals, the car can move forwards and backwards without restrictions, but turning left and right is altered. Instead of turning left and right without restriction, moving or holding the joystick in either direction causes the car to turn for only a set amount of time before stopping and waiting for another input. This is to help keep the motors from stalling as ... ? (Include a video/gif of the car moving in all four directions with the joystick)  
+To implement the timed movement for turning left and right, a 555 circuit was created and added to each of the direction inputs.  
+
+
+![alt text for the image](Images/555CarCircuit.png)
+*555 Timer Circuit Diagram*
