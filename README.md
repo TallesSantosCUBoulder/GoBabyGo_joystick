@@ -40,3 +40,12 @@ The combination of resistors and capacitors makes the five volt pulse from the t
 
 The full construction of the circuit requires the following components:
 * [3 full BTS7960 High Current H-Bridge Motor Drivers](/Datasheets/BTS7960%20Motor%20Driver.pdf)
+* [2 LM555 Timer Chips](/Datasheets/lm555.pdf)
+* [A Joystick](PutLinkHere)
+* [4 Toy Car Motors](PutLinkHere)
+* [A 12V to 5V Voltage Step Down](PutLinkHere)
+* 2 NPN Bipolar Junction Transistors
+* 6 100k Ohm Resistors
+* 4 10k Ohm Resistors
+* 4 10uF Capacitors
+* A 12V Battery
