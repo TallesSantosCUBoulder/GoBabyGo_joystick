@@ -2642,16 +2642,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 29.21) (xy 102.87 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26eb19e9-a323-44b1-9fa9-ee5831d3fa0e")
-	)
-	(wire
-		(pts
 			(xy 78.74 186.69) (xy 82.55 186.69)
 		)
 		(stroke
@@ -4393,76 +4383,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Motor_DC")
-		(at 256.54 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1828a85e-a406-4a1a-bea4-ca99e942d2a0")
-		(property "Reference" "M4"
-			(at 261.62 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Motor_DC"
-			(at 261.62 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.54 147.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 147.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Motor"
-			(at 256.54 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0177f45f-1e4c-4de0-807e-9f30fe3e45a4")
-		)
-		(pin "1"
-			(uuid "406dccb7-c8dc-4b42-89db-7024c268827c")
-		)
-		(instances
-			(project ""
-				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
-					(reference "M4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 184.15 73.66 0)
 		(unit 1)
@@ -4529,6 +4449,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 243.84 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3416d70e-f2ab-436a-9919-8fdc10d40db7")
+		(property "Reference" "#PWR020"
+			(at 243.84 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 243.84 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 243.84 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c24c12e-3a77-4ed7-9189-630e041007c0")
+		)
+		(instances
+			(project ""
+				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 184.15 130.81 0)
 		(unit 1)
@@ -4589,6 +4575,72 @@
 			(project "GoBabyGo"
 				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c24de64-1069-44f5-9779-cc25f73bed9f")
+		(property "Reference" "#PWR026"
+			(at 226.06 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cd800ad-7ca8-48d1-ad34-d266639509f7")
+		)
+		(instances
+			(project "GoBabyGo"
+				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5381,6 +5433,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 243.84 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "744e0646-3594-4f2d-ae7c-53d01a0fc1ab")
+		(property "Reference" "#PWR025"
+			(at 243.84 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 243.84 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48ab9c34-3cf3-4d67-a60b-3f78c46a2be4")
+		)
+		(instances
+			(project "GoBabyGo"
+				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 226.06 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7aa39f06-9c35-438c-97da-daa857059142")
+		(property "Reference" "#PWR019"
+			(at 226.06 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 226.06 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 226.06 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74653309-29de-402d-8bf0-03fda5a96e4b")
+		)
+		(instances
+			(project ""
+				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 140.97 130.81 90)
 		(unit 1)
@@ -6164,7 +6348,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_DC")
-		(at 203.2 144.78 0)
+		(at 226.06 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6173,7 +6357,7 @@
 		(fields_autoplaced yes)
 		(uuid "9de437a4-9ca6-477b-baad-1559929855db")
 		(property "Reference" "M1"
-			(at 208.28 146.0499 0)
+			(at 231.14 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6182,7 +6366,7 @@
 			)
 		)
 		(property "Value" "Motor_DC"
-			(at 208.28 148.5899 0)
+			(at 231.14 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6191,7 +6375,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 147.066 0)
+			(at 226.06 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6200,7 +6384,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 147.066 0)
+			(at 226.06 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6209,7 +6393,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 203.2 144.78 0)
+			(at 226.06 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6227,76 +6411,6 @@
 			(project ""
 				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
 					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Motor:Motor_DC")
-		(at 238.76 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9f96b800-fa03-4049-98bb-10df3f981467")
-		(property "Reference" "M3"
-			(at 243.84 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Motor_DC"
-			(at 243.84 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 147.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 147.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Motor"
-			(at 238.76 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8c5252e-5dd8-4e2c-a6bb-f71e456004c6")
-		)
-		(pin "2"
-			(uuid "bc1e9b1e-3f34-4c9b-ae46-0fd08a625134")
-		)
-		(instances
-			(project ""
-				(path "/786e7bae-fa28-4fc7-97d8-715b217da17e"
-					(reference "M3")
 					(unit 1)
 				)
 			)
@@ -6638,7 +6752,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 31.75 0)
+		(at 102.87 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6647,7 +6761,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0e79a69-bb7d-455c-a4b9-7f9fef77dbde")
 		(property "Reference" "#PWR018"
-			(at 102.87 38.1 0)
+			(at 102.87 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6656,7 +6770,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 36.83 0)
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6664,7 +6778,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 31.75 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6673,7 +6787,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 31.75 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6682,7 +6796,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 31.75 0)
+			(at 102.87 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,7 +7020,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_DC")
-		(at 220.98 144.78 0)
+		(at 243.84 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6915,7 +7029,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6261456-8105-4339-b4cc-fd40eaadebe8")
 		(property "Reference" "M2"
-			(at 226.06 146.0499 0)
+			(at 248.92 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6924,7 +7038,7 @@
 			)
 		)
 		(property "Value" "Motor_DC"
-			(at 226.06 148.5899 0)
+			(at 248.92 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6933,7 +7047,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 147.066 0)
+			(at 243.84 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6942,7 +7056,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.98 147.066 0)
+			(at 243.84 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6951,7 +7065,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 220.98 144.78 0)
+			(at 243.84 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)

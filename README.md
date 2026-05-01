@@ -1,23 +1,22 @@
-# GoBabyGo_joystick
+# GoBabyGo Joystick-Controlled Car
 **(Input Class ID Here):First Year Engineering Projects - Colorado Mesa University**  
 **Sponsor:** Talles Santos  
-**Students:** Michael Riley ()  
-&emsp;&emsp;&emsp;&emsp;&emsp;Francisco Bainori (Mechanical Engineering)  
+**Students:** Michael Riley (Mechanical Engineering)  
+&emsp;&emsp;&emsp;&emsp;&emsp;Francisco Cuen (Mechanical Engineering)  
 &emsp;&emsp;&emsp;&emsp;&emsp;Jaclyn Pellegrini (Mechanical Engineering)  
-&emsp;&emsp;&emsp;&emsp;&emsp;Caleb Kasayka ()  
+&emsp;&emsp;&emsp;&emsp;&emsp;Caleb Kasayka (Civil Engineering)  
 
 ## Introduction ##
-This is where the project introduction would go:
-* Start it off with the project statement/purpose (Why you are doing the project, what does it solve, who is it for, etc.)
-* Say how you solved it
-* What came with solving it
-* What you learned from solving the problem
-* Show a picture of the complete car (and maybe have the kid driving it too)
+“GoBabyGo” is a non-profit organization dedicated to providing children with limited mobility the opportunity to play independently by adapting motorized toy cars. Many children with mobility challenges struggle to press the pedal and steer simultaneously, making it difficult to operate the vehicle without constant assistance. Typical “GoBabyGo” modifications reroute the pedal wiring to a button mounted on the steering wheel, simplifying acceleration and improving usability.  
+
+After multiple iterations, the final design operated successfully and remained within budget. It reliably controlled forward/backward motion and steering, and testing showed consistent performance with minimal drift. The system was safe, intuitive, and easy for children to use. Future work should focus on simplifying the steering circuit and adapting the design for broader use across different ride‑on car models to benefit more children.  
+
+![Image of the Completed Car](Images/CompletedCar.png)  
+*The completed modified car*  
 
 ## Project Overview
-Brief overview/explanation of the entirity of the car and all of its notiable/altered features.  
-Include:
-* Anything budget or price related
+While the standard modifications help many children, some still find it difficult to press a button and steer at the same time. This project aims to create a more intuitive control system by replacing both the pedal and steering wheel with a single joystick. The joystick must control forward and backward motion as well as left and right steering, operate safely under 12 V and 3 A, and be implemented for under $200.
+
 ### Physical/Body Changes
 Put what physical changes you made to the body here
 ### Electrical Solutions
@@ -41,10 +40,10 @@ The combination of resistors and capacitors makes the five volt pulse from the t
 The full construction of the circuit requires the following components:
 * [3 full BTS7960 High Current H-Bridge Motor Drivers](/Datasheets/BTS7960%20Motor%20Driver.pdf)
 * [2 LM555 Timer Chips](/Datasheets/lm555.pdf)
-* [A Joystick](/Datasheets/PutLinkHere.webp)
-* [4 Toy Car Motors](/Datasheets/PutLinkHere.webp)
-* [A 12V to 5V Voltage Step Down](/Datasheets/PutLinkHere.webp)
-* 2 NPN Bipolar Junction Transistors
+* [A Joystick](/Datasheets/SANWA%20JLF-TP-8YT%20Joystick%20Instruction%20Manual.pdf)
+* [An RC Car](/Datasheets/BCP%20Sky908%20User%20Manual.pdf)
+* [2 NPN Bipolar Junction Transistors](/Datasheets/2n2222a.pdf)
+* A 12V to 5V Voltage Step Down
 * 6 100k Ohm Resistors
 * 4 10k Ohm Resistors
 * 4 10uF Capacitors
