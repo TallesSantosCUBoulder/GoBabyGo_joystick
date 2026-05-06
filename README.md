@@ -3,9 +3,9 @@
 **Sponsor:** Talles Santos  
 **Project Team:** Team Snow Munchers  
 **Team Members:** Michael Riley (Civil Engineering)  
-&emsp;&emsp;&emsp;&emsp;&emsp;Francisco Cuen (Mechanical Engineering)  
-&emsp;&emsp;&emsp;&emsp;&emsp;Jaclyn Pellegrini (Mechanical Engineering)  
-&emsp;&emsp;&emsp;&emsp;&emsp;Caleb Kasayka (Mechanical Engineering)  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Francisco Cuen (Mechanical Engineering)  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Jaclyn Pellegrini (Mechanical Engineering)  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Caleb Kasayka (Mechanical Engineering)  
 &emsp;  
 &emsp;
 &emsp;  
