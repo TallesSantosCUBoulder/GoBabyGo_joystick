@@ -50,19 +50,19 @@ The combination of resistors and capacitors makes the five volt pulse from the t
 &emsp;  
 
 The full construction of the circuit requires the following components:
-* [3 IBT-2 BTS7960 High Current H-Bridge Motor Drivers](/Datasheets/BTS7960%20Motor%20Driver.pdf)
+* [3 IBT-2 BTS7960 High Current H-Bridge Motor Drivers](/Datasheets/BTS7960%20Motor%20Driver.pdf)  
     ![H-Bridge Controller Diagram](Images/MotorDriver.jpg)  
     *The Function diagram of an H-Bridge Controller*  
     &emsp;  
 
     * Full representation of the function of an H-Bridge Controller can be found in the above image. When an input is received, it sends a signal to the H-bridge motor controller which recognizes the voltage as a directional input and then outputs that signal into the motor itself. This allows for safe, effective, bi-directional movement. The H-bridge has a total of 12 attachment points. two for power in, two for power to motor, two for input detection (seen as “IN”), two for inhibiting direction (“INH”, two for ISs), a ground for the logic board (GND), and a 5.5V input for the logic board (“VCC”). This design will take advantage of all the inputs / outputs except for the SIs.
-* [2 LM555 Timer Chips](/Datasheets/lm555.pdf)
+* [2 LM555 Timer Chips](/Datasheets/lm555.pdf)  
     ![555 Timer Chip Diagram](Images/555TimerChip.png)  
     *Diagram of a 555 timer and the respective pins*  
     &emsp;  
 
     * A 555 timer is an integrated circuit that takes an electrical input and outputs a pulse over a certain interval of time. This component is needed to turn the front steering motor to a certain point so that the motor doesn’t overturn the mechanical component, breaking the car, and burning out the motor. Power is inputted through the VCC pin which powers the circuit (as seen in the above image). When a signal comes through the Trigger pin, it goes through the circuit within the 555 and then a capacitor and resistor attached to the discharge and threshold pins which controls how long a pulse is sent out of the output pin. For this project, the 555 is operated in monostable mode, meaning it sends out a singular pulse and then returns to its original state. To get the pulse to last for a certain time, the equation T=1.1RC where T is time, R is the strength of the resistor, and C is the value of the capacitor. For the motor a 1 second pulse is needed so values of a100kΩ resistor and a 10µF capacitor are needed.
-* [A Joystick](/Datasheets/SANWA%20JLF-TP-8YT%20Joystick%20Instruction%20Manual.pdf)
+* [A Joystick](/Datasheets/SANWA%20JLF-TP-8YT%20Joystick%20Instruction%20Manual.pdf)  
     ![Joystick Switch Diagram](Images/JoystickDiagram.png)  
     *Internal switching logic of the arcade joystick*  
     &emsp;  
