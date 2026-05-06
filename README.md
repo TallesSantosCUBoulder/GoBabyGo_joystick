@@ -9,7 +9,7 @@
 &emsp;  
 &emsp;
 &emsp;  
-**Note: A large part of this README file references the [User Manual](/Reports/Users%20manual.pdf) and [Final Report](/Reports/Final%20Report%20First%20Draft%20-%20Snow%20Munchers.pdf) written by the members of the Snow Munchers Team. The printed circuit board (PCB) was designed and the README was written and compiled by Electrical and Computer Engineering Senior [Alyssa Jackson](https://github.com/aJax-EXE).**
+**Note: A large part of this README file references the [User Manual](/Reports/Users%20manual.pdf) and [Final Report](/Reports/Final%20Report%20First%20Draft%20-%20Snow%20Munchers.pdf) written by the members of the Snow Munchers Team. The printed circuit board (PCB) was designed, and the README was written and compiled, by Electrical and Computer Engineering Senior [Alyssa Jackson](https://github.com/aJax-EXE).**
 
 ## Introduction ##
 “GoBabyGo” is a non-profit organization dedicated to providing children with limited mobility the opportunity to play independently by adapting motorized toy cars. Many children with mobility challenges struggle to press the pedal and steer simultaneously, making it difficult to operate the vehicle without constant assistance. Typical “GoBabyGo” modifications reroute the pedal wiring to a button mounted on the steering wheel, simplifying acceleration and improving usability.  
@@ -49,17 +49,25 @@ The combination of resistors and capacitors makes the five volt pulse from the t
 *The Full Circuit Diagram of the car*  
 &emsp;  
 
-![Full Car PCB Model](Images/PCBCircuitModel.png)  
-*The Full PCB Model of the car*  
-&emsp;  
-
 The full construction of the circuit requires the following components:
 * [3 IBT-2 BTS7960 High Current H-Bridge Motor Drivers](/Datasheets/BTS7960%20Motor%20Driver.pdf)
-    * When an input is received, it sends a signal to the H-bridge motor controller which recognizes the voltage as a directional input and then outputs that signal into the motor itself. This allows for safe, effective, bi-directional movement. The H-bridge has a total of 12 attachment points. two for power in, two for power to motor, two for input detection (seen as “IN” in Appendix F), two for inhibiting direction (“INH” in Appendix F, two for ISs (seen in Appendix F), a ground for the logic board (GND in Appendix F), and a 5.5V input for the logic board (“VCC” in Appendix F). This design will take advantage of all the inputs / outputs except for the SIs. Full representation of the function of an H-Bridge Controller can be found in Appendix F.
+    ![H-Bridge Controller Diagram](Images/MotorDriver.jpg)  
+    *The Function diagram of an H-Bridge Controller*  
+    &emsp;  
+
+    * Full representation of the function of an H-Bridge Controller can be found in the above image. When an input is received, it sends a signal to the H-bridge motor controller which recognizes the voltage as a directional input and then outputs that signal into the motor itself. This allows for safe, effective, bi-directional movement. The H-bridge has a total of 12 attachment points. two for power in, two for power to motor, two for input detection (seen as “IN”), two for inhibiting direction (“INH”, two for ISs), a ground for the logic board (GND), and a 5.5V input for the logic board (“VCC”). This design will take advantage of all the inputs / outputs except for the SIs.
 * [2 LM555 Timer Chips](/Datasheets/lm555.pdf)
-    * A 555 timer is an integrated circuit that takes an electrical input and outputs a pulse over a certain interval of time. [4] This component is needed to turn the front steering motor to a certain point so that the motor doesn’t overturn the mechanical component, breaking the car, and burning out the motor. Power is inputted through the VCC pin which powers the circuit (as seen in Appendix G). When a signal comes through the Trigger pin, it goes through the circuit within the 555 and then a capacitor and resistor attached to the discharge and threshold pins which controls how long a pulse is sent out of the output pin. For this project, the 555 is operated in monostable mode, meaning it sends out a singular pulse and then returns to its original state. To get the pulse to last for a certain time, the equation T=1.1RC where T is time, R is the strength of the resistor, and C is the value of the capacitor. For the motor a 1 second pulse is needed so values of a100kΩ resistor and a 10µF capacitor are needed. [5]
+    ![555 Timer Chip Diagram](Images/555TimerChip.png)  
+    *Diagram of a 555 timer and the respective pins*  
+    &emsp;  
+
+    * A 555 timer is an integrated circuit that takes an electrical input and outputs a pulse over a certain interval of time. This component is needed to turn the front steering motor to a certain point so that the motor doesn’t overturn the mechanical component, breaking the car, and burning out the motor. Power is inputted through the VCC pin which powers the circuit (as seen in the above image). When a signal comes through the Trigger pin, it goes through the circuit within the 555 and then a capacitor and resistor attached to the discharge and threshold pins which controls how long a pulse is sent out of the output pin. For this project, the 555 is operated in monostable mode, meaning it sends out a singular pulse and then returns to its original state. To get the pulse to last for a certain time, the equation T=1.1RC where T is time, R is the strength of the resistor, and C is the value of the capacitor. For the motor a 1 second pulse is needed so values of a100kΩ resistor and a 10µF capacitor are needed.
 * [A Joystick](/Datasheets/SANWA%20JLF-TP-8YT%20Joystick%20Instruction%20Manual.pdf)
-    * The joystick has five wires with a gauge of 23 AWG (American Wire Gauge). These wires are connected to a circuit board via a connector. This system consists of four signal wires, each for a different switch that is also connected to the circuit board. The last wire serves as a 5v-12v source wire; the input (5v-12v) will flow through this wire and in return, will output through one of the four switches (possibly two) depending on which switch is compressed or activated. Appendix D illustrates the internal switching logic of the joystick.
+    ![Joystick Switch Diagram](Images/JoystickDiagram.png)  
+    *Internal switching logic of the arcade joystick*  
+    &emsp;  
+
+    * The above image illustrates the internal switching logic of the joystick. The joystick has five wires with a gauge of 23 AWG (American Wire Gauge). These wires are connected to a circuit board via a connector. This system consists of four signal wires, each for a different switch that is also connected to the circuit board. The last wire serves as a 5v-12v source wire; the input (5v-12v) will flow through this wire and in return, will output through one of the four switches (possibly two) depending on which switch is compressed or activated. 
 * [An RC Car](/Datasheets/BCP%20Sky908%20User%20Manual.pdf)
     * For this project an existing car was bought and provided to the group, but the car model used costs around $250 USD.
 * [2 NPN Bipolar Junction Transistors](/Datasheets/2n2222a.pdf)
@@ -79,9 +87,22 @@ The full construction of the circuit requires the following components:
 
 The circuit starts at the battery going into the two gearboxed motors of the car and the voltage step down. The 5V from the stepdown powers the rest of the system: all three of the motor drivers and the two 555 timer circuits. While the forward and backwards motor drivers are only activated with the direct signal from the joystick, the left and right one first goes through there respective timing circuit to give the proper timed signal.  
 
-The PCB holds the resistors, capacitors, and n
+![Full Car PCB Model](Images/PCBCircuitModel.png)  
+*The Full PCB model for the car*  
+&emsp;  
+
+The PCB holds the resistors, capacitors, and transistors that make up the timing circuit, as well as all of the connectors necessary for both powering the board, connecting the joystick to the motor drivers, and for the motor drivers themselves.
 
 ### Hardware Setup
+
+
+## How to Operate
+### Recommendations for Operation
+Before general use, it is recommended that:  
+* The driver does not exceed 77lbs
+* The car avoids liquid 
+* The car is not driven in the rain	 
+* The car avoids sharp drops offs like curbs
 
 ## Results
 
@@ -91,10 +112,3 @@ The PCB holds the resistors, capacitors, and n
         8.2. Recommended next steps  
 Firstly, the telecontrol should be reattached. This feature was initially implemented into the car for safety, but the snow munchers did not have time to fully integrate this. To re-implement this feature, a second PCB would have to be printed to allow for toggleable control between the IBT-2 motor drivers and the standard relay. This could be done most simplistically with 4 transistors for each motor. Two to allow for flow from the telecontrol relay and the other two to allow for flow from the joystick. The second reintegration should be rewiring the lights. The old lights are already attached and ready to run, however they need to be wired to a new power to turn on with the car. Similarly, the sound system can be easily repaired; however, the old speaker was damaged when removed, so a replacement would need to be purchased and reinstalled inside the dashboard.
 
-## How to Operate
-### Recommendations for Operation
-Before general use, it is recommended that:  
-* The driver does not exceed 77lbs
-* The car avoids liquid 
-* The car is not driven in the rain	 
-* The car avoids sharp drops offs like curbs
