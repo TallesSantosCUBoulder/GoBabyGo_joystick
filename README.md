@@ -122,7 +122,7 @@ Before general use, it is recommended that:
 * The car avoids sharp drops offs like curbs
 
 ## Results
-        6.2.  CRITERIA 1 – DIRECTIONAL CONTROL
+### CRITERIA 1 – DIRECTIONAL CONTROL
 Table 1. Testing requirements, outcomes, and testing methods for the requirements for directional control. Requirement – must have fully functional control over the direction of the moving car.
 
             6.2.1. PURPOSE OF EVALUATION - The purpose of the directional control test is to ensure that the electric ride on car responds accurately and reliably to user inputs. Effective directional control is essential for safe operations, as it allows the user to intentionally move the vehicle forward, backward, and laterally, ensuring the car can be maneuvered smoothly during normal operation and while navigating obstacles or turns. 
