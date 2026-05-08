@@ -11,7 +11,7 @@
 &emsp;  
 **Note: A large part of this README file references the [User Manual](/Reports/Users%20manual.pdf) and [Final Report](/Reports/Final%20Report%20First%20Draft%20-%20Snow%20Munchers.pdf) written by the members of the Snow Munchers Team. The printed circuit board (PCB) was designed, and the README was written and compiled, by Electrical and Computer Engineering Senior [Alyssa Jackson](https://github.com/aJax-EXE).**
 
-## Introduction ##
+## Introduction
 “GoBabyGo” is a non-profit organization dedicated to providing children with limited mobility the opportunity to play independently by adapting motorized toy cars. Many children with mobility challenges struggle to press the pedal and steer simultaneously, making it difficult to operate the vehicle without constant assistance. Typical “GoBabyGo” modifications reroute the pedal wiring to a button mounted on the steering wheel, simplifying acceleration and improving usability.  
 
 After multiple iterations, the final design operated successfully and remained within budget. It reliably controlled forward/backward motion and steering, and testing showed consistent performance with minimal drift. The system was safe, intuitive, and easy for children to use. Future work should focus on simplifying the steering circuit and adapting the design for broader use across different ride‑on car models to benefit more children.  
