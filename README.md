@@ -67,16 +67,15 @@ The full construction of the circuit requires the following components:
     * The above image illustrates the internal switching logic of the joystick. The joystick has five wires with a gauge of 23 AWG (American Wire Gauge). These wires are connected to a circuit board via a connector. This system consists of four signal wires, each for a different switch that is also connected to the circuit board. The last wire serves as a 5V-12V source wire; the input (5V-12V) will flow through this wire and in return, will output through one of the four switches (possibly two) depending on which switch is compressed or activated. 
 * [An RC Car](/Datasheets/BCP%20Sky908%20User%20Manual.pdf)
     * For this project an existing car was bought and provided to the group, but the car model used costs around $250 USD.
-* [2 NPN Bipolar Junction Transistors](/Datasheets/2n2222a.pdf)
+
+* [2 NPN Bipolar Junction Transistors](/Datasheets/2n2222a.pdf)  
 &emsp;  
     ![Diagram of timing circuit](Images/555CarCircuit.png)  
     *The circuit diagram of the pulse shaping module used in the car*  
-    &emsp;  
-
 &emsp;  
     ![3D Model of the working PCB](Images/PCB3dModel.png)  
-    *The 3D Model that represents what the workign model looks like*  
-    &emsp;  
+    *The 3D Model that represents what the working model looks like*  
+&emsp;  
 
     * The transistors are the necessary part of the timing circuit. For the 555 to properly work, it needs sharp, high input. This is not as simple as it would seem because our joystick is mainly used in a “toggle” sense, where the driver will hold it left to turn left. After some testing, we realized that this toggled system would lead to the output of the 555 system always being held high. To fix this, we implemented what is called a pulse shaping module. This consists mainly of a capacitor momentarily allowing a transistor to drain a power source to ground, creating a quick pulse of electricity that the 555 timers can properly understand. The above images shows the pulse shaping module implemented into the design of the circuit and the 3D model of the completed PCB with all of its components.  
 * [Joystick Mount](/3dModels/Joystick%20Mount%203.STL)
