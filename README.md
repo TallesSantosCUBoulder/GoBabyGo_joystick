@@ -37,13 +37,7 @@ Along with the functions that the car needs to reach from the the project overvi
 
 ###  Electrical Solutions
 For this car, a modification was made for the movement. Using a joystick instead of a steering wheel and foot-powered pedals, the car can move forwards and backwards without restrictions, but turning left and right is altered. Instead of turning left and right without restriction, moving or holding the joystick in either direction causes the car to turn for only a set amount of time before stopping and waiting for another input. __This is to help keep the motors from stalling as ... ? (Include a video/gif of the car moving in all four directions with the joystick)__  
-To implement the timed movement for turning left and right, a 555 circuit was created and added to each of the direction inputs.  
 
-
-![555 Timer Circuit Diagram](Images/555CarCircuit.png)  
-*555 Timer Circuit Diagram*  
-&emsp;  
-The combination of resistors and capacitors makes the five volt pulse from the timer last for only sec second before cutting off regardless of whether the joystick is still held down, resulting in the short burst of turning that the car experiences.  
 
 ![Full Car Circuit Diagram](Images/PCBSchematic.png)  
 *The Full Circuit Diagram of the car*  
