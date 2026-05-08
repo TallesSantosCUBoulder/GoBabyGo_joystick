@@ -78,14 +78,14 @@ The full construction of the circuit requires the following components:
     *The 3D Model that represents what the workign model looks like*  
     &emsp;  
 
-    * The transistor are the necessary part of the timing circuit. For the 555 to properly work, it needs sharp, high input. This is not as simple as it would seem because our joystick is mainly used in a “toggle” sense, where the driver will hold it left to turn left. After some testing, we realized that this toggled system would lead to the output of the 555 system always being held high. To fix this, we implemented what is called a pulse shaping module. This consists mainly of a capacitor momentarily allowing a transistor to drain a power source to ground, creating a quick pulse of electricity that the 555 timers can properly understand. The above images shows the pulse shaping module implemented into the design of the circuit and the 3D model of the completed PCB with all of its components.
+    * The transistors are the necessary part of the timing circuit. For the 555 to properly work, it needs sharp, high input. This is not as simple as it would seem because our joystick is mainly used in a “toggle” sense, where the driver will hold it left to turn left. After some testing, we realized that this toggled system would lead to the output of the 555 system always being held high. To fix this, we implemented what is called a pulse shaping module. This consists mainly of a capacitor momentarily allowing a transistor to drain a power source to ground, creating a quick pulse of electricity that the 555 timers can properly understand. The above images shows the pulse shaping module implemented into the design of the circuit and the 3D model of the completed PCB with all of its components.  
 * [Joystick Mount](/3dModels/Joystick%20Mount%203.STL)
 &emsp;  
     ![Joystick Mount Solidworks Model](Images/JoystickMountModel.png)  
     *The SolidWorks drawing of the joystick mount*  
     &emsp;  
 
-    * The joystick already has two existing mounting holes, 0.278 inches in diameter, implemented into the factory design. With this, a CAD drawing was produced and integrated with these existing holes (see Appendix E). The design functions similar to a washer where it will mount on the original steering wheel location. Two bolts will run through the top (the side where the joystick extrudes), and below there will be two nuts securing the simple assembly in place. The above image consists of a SolidWorks drawing of the mount.
+    * The joystick already has two existing mounting holes, 0.278 inches in diameter, implemented into the factory design. With this, a CAD drawing was produced and integrated with these existing holes (see Appendix E). The design functions similar to a washer where it will mount on the original steering wheel location. Two bolts will run through the top (the side where the joystick extrudes), and below there will be two nuts securing the simple assembly in place. The above image consists of a SolidWorks drawing of the mount.  
 * A 12V to 5V Voltage Step Down
     * Must be able to handle 3A of current and 15W of power.
 * 6 100k Ohm Resistors
